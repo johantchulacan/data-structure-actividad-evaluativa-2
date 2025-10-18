@@ -16,4 +16,30 @@ public class Tarea {
 
     }
 
-    
+        public String getId() { 
+            return id; 
+        }
+        public String getDescripcion() {
+            return descripcion; 
+        }
+        public int getPrioridad() { 
+            return prioridad; 
+        }
+       
+        // Devuelve el long (requerimiento del atributo)
+        public long getTiempoLlegada() { 
+            return tiempoLlegada; 
+        }
+
+    public String toString() {
+        return "Tarea{" +
+                "id='" + id + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", prioridad=" + prioridad +
+                ", tiempoLlegada=" + getTiempoLlegadaComoTimestamp() +
+                '}';
+    }
+
+}
+
+
