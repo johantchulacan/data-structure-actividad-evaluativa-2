@@ -47,7 +47,7 @@ public class GestorTareas {
     // 4.3 Consultar estado por ID
     public String consultarEstadoTarea(String idTarea) {
         if (registro.containsKey(idTarea)) {
-            return "Tarea " + idTarea + ": Completada ✅";
+            return "Tarea " + idTarea + ": Completada ";
         }
 
         // Buscar en la pila (urgentes pendientes)
