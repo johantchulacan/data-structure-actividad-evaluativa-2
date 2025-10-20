@@ -67,6 +67,25 @@ public class GestorTareas {
         return "ID no encontrado ";
     }
 
+    public Tarea modificarTarea(Tarea idTarea)
+        if (getId().equals(idTarea))
+        Tarea tareaModificada = null
+
+        if (!pilaPrioritaria.idTarea()) {
+            tareaModificada = pilaPrioritaria.set();
+            System.out.println("modificando tarea " + idTarea" (pila): " + tareaModificada.setId());
+        } else if (!colaEspera.idTarea()) {
+            tareaModificada = colaEspera.set();
+            System.out.println("modificando tarea normal " + idTarea " (cola): " + tareaModificada.SetId());
+        } else {
+            System.out.println("tarea invalida.");
+            return null;
+        }
+
+            
+        
+
+
     // Método auxiliar para mostrar estado de estructuras
     public void mostrarEstadoEstructuras() {
         System.out.println("\n--- Estado actual ---");
@@ -75,3 +94,6 @@ public class GestorTareas {
         System.out.println("Registro de Trazabilidad: " + registro.keySet());
     }
 }
+
+
+        
